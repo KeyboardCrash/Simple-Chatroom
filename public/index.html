@@ -1,0 +1,40 @@
+<!--
+  Chatroom HTML 
+  Brandon Lu
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Chatroom - Brandon Lu</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      
+      <div class="fixed-header"><p id="personaluser" style="padding-left: 10px;">Logged in As: </p></div>
+
+      <div id="chat">
+        <ul id="messages" ></ul>
+      </div>
+      
+      <div id="users">
+        <ul id="activeusers"></ul>
+      </div>
+      
+      <div id="inputbox" class="justify-content-center">
+        <form action="" class="test">
+          <input id="m" autocomplete="off" /><button>Send</button>
+        </form>
+      </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
